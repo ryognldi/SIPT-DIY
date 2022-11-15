@@ -1,7 +1,7 @@
 <div class="sidebar-header position-relative">
     <div class="d-flex justify-content-between align-items-center">
         <div class="logo">
-            <h3>SIPT-DIY</h3>
+            <h3><a href="<?= base_url() ?>">SIPT-DIY</a></h3>
         </div>
         <div class="theme-toggle  gap-2 align-items-center mt-2">
 

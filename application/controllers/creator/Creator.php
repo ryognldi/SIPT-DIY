@@ -2,7 +2,6 @@
 
 class creator extends CI_Controller
 {
-
     function __construct()
     {
         parent::__construct();
@@ -18,18 +17,13 @@ class creator extends CI_Controller
 
         $data['event'] = $this->db->get_where('tb_event', ['creator_id' => $this->session->userdata('email')])->result();
 
-        var_dump($data);
-        die;
         $this->load->view('creator/index', $data);
     }
 
     public function event()
     {
-
-
         $data['creator'] =  $this->creator_model->getCreator($this->session->userdata('email'))->row();
         $data['event'] = $this->db->get_where('tb_event', ['creator_id' => $this->session->userdata('email')])->result_array();
-
         $this->load->view('creator/event', $data);
     }
     public function eventDetail($id = null)
@@ -71,7 +65,6 @@ class creator extends CI_Controller
 
 
         $event = [
-
             'creator_id' => $this->session->userdata('email'),
             'judul_event' => $this->input->post('judul_event'),
             'deskripsi' => $this->input->post('deskripsi_event'),

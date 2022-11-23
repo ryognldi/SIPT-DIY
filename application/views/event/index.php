@@ -22,7 +22,6 @@
 
 	<!-- Header Section End -->
 
-	Banner Section Begin
 	<section class="banner set-bg" data-setbg="<?= base_url() ?>assets/images/ayang.png">
 		<div class="container">
 			<div class="row">

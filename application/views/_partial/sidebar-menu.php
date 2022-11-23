@@ -59,8 +59,8 @@
                     <?php if ($this->session->userdata('role') != 'admin') : ?>
                 <form action="<?= base_url('member/gantiRole') ?>" method="post">
 
-                    <input type="hidden" name="email" value="<?= $this->session->userdata('email') ?>">
-                    <input type="hidden" name="role" value="<?= $this->session->userdata('role') ?>">
+                    <input type="text" name="email" value="<?= $this->session->userdata('email') ?>">
+                    <input type="text" name="role" value="<?= $this->session->userdata('role') ?>">
                     <button class="btn btn-md btn-primary btn-block">
                         ganti Akun</button>
                 </form>

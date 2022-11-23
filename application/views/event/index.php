@@ -22,7 +22,7 @@
 
 	<!-- Header Section End -->
 
-	<!-- Banner Section Begin 
+	Banner Section Begin
 	<section class="banner set-bg" data-setbg="<?= base_url() ?>assets/images/ayang.png">
 		<div class="container">
 			<div class="row">
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</section>
-	 Banner Section End -->
+	<!-- Banner Section End -->
 
 	<!-- Product Section Begin -->
 	<section class="product spad">

@@ -8,9 +8,6 @@ class auth extends CI_Controller
         parent::__construct();
     }
 
-
-
-
     public function login()
     {
         $this->load->model('auth_model');
@@ -25,16 +22,19 @@ class auth extends CI_Controller
             if ($user['role'] == 'admin') {
                 $this->session->set_userdata('uid', $user['id_users']);
                 $this->session->set_userdata('role', $user['role']);
+                $this->session->set_userdata('nama', $user['nama']);
                 $this->session->set_userdata('email', $user['email']);
                 redirect('admin/dashboard');
             } elseif ($user['role'] == 'creator') {
                 $this->session->set_userdata('uid', $user['id_users']);
                 $this->session->set_userdata('role', $user['role']);
+                $this->session->set_userdata('nama', $user['nama']);
                 $this->session->set_userdata('email', $user['email']);
                 redirect('creator/dashboard');
             } else {
                 $this->session->set_userdata('uid', $user['id_users']);
                 $this->session->set_userdata('role', $user['role']);
+                $this->session->set_userdata('nama', $user['nama']);
                 $this->session->set_userdata('email', $user['email']);
                 // redirect('member/dashboard');
                 redirect($_SERVER['HTTP_REFERER']);

@@ -16,9 +16,10 @@ class creator extends CI_Controller
     {
         $data['creator'] =  $this->creator_model->getCreator($this->session->userdata('email'))->row();
 
-
         $data['event'] = $this->db->get_where('tb_event', ['creator_id' => $this->session->userdata('email')])->result();
 
+        var_dump($data);
+        die;
         $this->load->view('creator/index', $data);
     }
 

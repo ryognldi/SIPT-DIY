@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xl-3 col-lg-2">
                 <div class="header__logo">
-                    <h5>EVENT PPAW</h5>
+                    <h5>E-JOGJA EVENT</h5>
                 </div>
             </div>
 
@@ -18,7 +18,7 @@
                 </nav>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-xl-3">
                 <nav class="header__menu">
                     <ul style="text-align: end;">
                         <?php
@@ -28,7 +28,7 @@
                             </li>
                         <?php else : ?>
                             <li>
-                                <a href="#"> <i class="fa fa-user"></i> AMAR</a>
+                                <a href="#"> <i class="fa fa-user"></i> <?= $this->session->userdata('nama') ?></a>
                                 <ul class="dropdown">
                                     <li><a href="<?= base_url('member/dashboard') ?>">Tiket Saya </a></li>
                                     <li><a href="<?= base_url('auth/logOff') ?>">Keluar </a></li>

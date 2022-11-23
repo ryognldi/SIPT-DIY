@@ -31,9 +31,9 @@
             </div>
             <div class="page-content">
                 <section class="row">
-                    <div class="col-12 col-lg-9">
+                    <div class="col-6 col-lg-9">
                         <div class="row">
-                            <div class="col-6 col-lg-4 col-md-6">
+                            <div class="col-6 col-lg-6 col-md-6">
                                 <div class="card">
                                     <div class="card-body py-4 px-4">
                                         <div class="d-flex align-items-center">
@@ -85,7 +85,19 @@
                             </nav>
                         </div>
                     </div>
+                    <?php if (!$event) : ?>
+                        <div class="col-xl-12 col-md-12 col-sm-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body text-center">
+                                        <h3>EVENT KAMU MASIH KOSONG NIH</h3>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
+
+                    <?php endif ?>
                     <?php foreach ($event as $event) : ?>
                         <div class="col-xl-4 col-md-6 col-sm-12">
                             <div class="card">
